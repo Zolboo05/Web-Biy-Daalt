@@ -1,0 +1,38 @@
+.background {
+    width: 70%;
+    height: 70%;
+    border: solid 10px black;
+    background-color: grey;
+    background-size: contain;
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+    padding: 10px;
+}
+
+#seats {
+    width: 70%;
+    height: 70%;
+    border: solid 10px black;
+    background-color: grey;
+    background-size: contain;
+    position: relative;
+    margin: auto;
+    margin-top: -40%;
+    padding: 10px;
+    top: -10%;
+}
+
+
+/* .changedSeat {
+    /* height: 50%; */
+
+
+/* width: auto; */
+
+
+/* float: right;
+    position: relative;
+    right: -20%;
+    top: -70%;
+}  */

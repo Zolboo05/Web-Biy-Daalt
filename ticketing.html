@@ -1,0 +1,63 @@
+<html>
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="ticketing.css">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link rel="icon" href="New-fav.png" type="image/png" sizes="16x16">
+
+<head>
+    <title></title>
+    <!-- 102.4%  101.3% -->
+
+
+    <script type="text/javascript">
+        $$('img').each(function(img_tag) {
+            if (/.*\.gif/.test(img_tag.src)) {
+                var rub = new SuperGif({
+                    gif: img_tag
+                });
+            }
+        });
+    </script>
+</head>
+
+<body style="background-color:black">
+        <header>
+                <img class="logo" src="onlinelogomaker-121019-0024-5109.png" alt="logo" style="height: 100px" width="350px">
+                <nav>
+                    <ul class="nav__links">
+                        <li class="nav__li"><a href="home.html" class="nav__a">Нүүр</a></li>
+                        <li class="nav__li"><a href="schdule.html"class="nav__a">Үзвэрийн хуваарь</li>
+                        <li class="nav__li"><a href="" class="nav__a">Онлайн захиалга</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <a class="cta" href=""><button class="nav__button">Contact</button></a>
+                </nav>
+           </header>
+    <div class="background">
+        <div>
+            <p>Сонгосон үзвэр: <span></span></p>
+            <p>Сонгосон огноо: <span></span></p>
+            <p>Сонгосон цаг: <span></span></p>
+            <p>Танхим: <span></span></p>
+        </div>
+        <div>
+            <p>Төрөл</p>
+            <p>Tом хүн: <input name="tom" id='tom' type="number"> 12000</p>
+            <p>Xүүхэд: <input name="jijig" id='jijig' type="number"> 8000</p>
+            <p>Нийт үнэ: <span name="niit" id='niit'></span></p>
+            <a href="seatSelection.html" type="button" ><button>Continue</button></a>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+        <script>
+            // var a;
+            // a = eval(document.getElementById('tom').value * 12000 + document.getElementById('jijig').value * 8000);
+            // document.getElementById('niit').innerHTML += a;
+
+            $(document).keyup(function() {
+                document.getElementById("niit").innerHTML = eval(document.getElementById("tom").value * 12000 + document.getElementById("jijig").value * 8000);
+            });
+        </script>
+</body>
+</html>
